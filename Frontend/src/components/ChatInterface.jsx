@@ -1,8 +1,8 @@
-// src/components/ChatInterface.jsx
 import { Send, Camera, User, Zap } from 'lucide-react';
 import React, { useState, useRef, useEffect } from 'react';
+import BackendAPI from '../utils/api';
 
-const API_BASE_URL = "http://127.0.0.1:8001/api/v1";
+const API_BASE_URL = `${BackendAPI}/api/v1`;
 
 const ChatInterface = ({ userToken }) => {
   const [messages, setMessages] = useState([]);

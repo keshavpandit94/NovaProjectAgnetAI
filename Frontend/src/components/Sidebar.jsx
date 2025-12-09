@@ -1,4 +1,3 @@
-// src/components/Sidebar.jsx
 import { Plus, MessageSquare, Settings, User, LogOut, X } from 'lucide-react';
 import React, { useState } from 'react';
 
