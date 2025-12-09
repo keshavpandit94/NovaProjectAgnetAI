@@ -1,4 +1,3 @@
-# app/api/v1/chat_router.py (UPDATED for Stateless Anonymous Search)
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException, Depends
 from typing import Optional, List
 from uuid import uuid4

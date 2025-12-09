@@ -1,4 +1,3 @@
-# app/core/config.py
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from dotenv import load_dotenv
 from pathlib import Path
@@ -8,6 +7,8 @@ load_dotenv()
 class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
     model_config = SettingsConfigDict(env_file='.env', extra='ignore')
+    
+    PORT: int = 8001
     
     # Database Settings
     MONGO_URI: str

@@ -1,4 +1,3 @@
-# app/database/models.py
 from mongoengine import Document, StringField, DateTimeField, BooleanField, connect
 from datetime import datetime
 

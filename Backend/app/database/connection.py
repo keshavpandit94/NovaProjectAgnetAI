@@ -1,4 +1,3 @@
-# app/database/connection.py
 from mongoengine import connect, disconnect_all
 from app.core.config import settings
 

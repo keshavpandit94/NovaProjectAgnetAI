@@ -1,4 +1,3 @@
-# app/api/v1/auth_router.py
 from fastapi import APIRouter, HTTPException, status, Depends
 from fastapi.security import OAuth2PasswordRequestForm
 from app.database.models import User

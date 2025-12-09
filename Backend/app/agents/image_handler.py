@@ -1,4 +1,3 @@
-# app/agents/image_handler.py
 import cloudinary
 import cloudinary.uploader
 from fastapi import UploadFile

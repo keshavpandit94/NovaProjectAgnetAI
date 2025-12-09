@@ -1,4 +1,3 @@
-# main.py (FINAL UPDATE)
 import os
 from fastapi import FastAPI
 from app.api.v1.chat_router import router as chat_router

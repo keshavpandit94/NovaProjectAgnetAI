@@ -1,4 +1,3 @@
-# app/agents/multimodal_agent.py
 from langchain_core.messages import HumanMessage
 from io import BytesIO
 from typing import Optional, Any
