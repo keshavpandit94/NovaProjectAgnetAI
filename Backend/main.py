@@ -1,4 +1,5 @@
 # main.py (FINAL UPDATE)
+import os
 from fastapi import FastAPI
 from app.api.v1.chat_router import router as chat_router
 from app.api.v1.auth_router import router as auth_router 
@@ -36,4 +37,5 @@ app.include_router(auth_router, prefix="/api/v1")
 async def read_root():
     return {"message": "Gemini Multimodal Agent Backend is running."}
 
-# To Run: uvicorn main:app --reload
+# To Run locally: uvicorn main:app --reload --port 8001
+# For Render/production: uvicorn main:app --host 0.0.0.0 --port $PORT (uses PORT env var)
