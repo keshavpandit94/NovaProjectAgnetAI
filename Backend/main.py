@@ -2,6 +2,7 @@ import os
 from fastapi import FastAPI
 from app.api.v1.chat_router import router as chat_router
 from app.api.v1.auth_router import router as auth_router 
+from app.api.v1.history_router import router as history_router 
 from app.database.connection import connect_db, close_db
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -31,6 +32,7 @@ def shutdown_event():
 # --- Include Routers ---
 app.include_router(chat_router, prefix="/api/v1")
 app.include_router(auth_router, prefix="/api/v1") 
+app.include_router(history_router, prefix="/api/v1")
 
 @app.get("/")
 async def read_root():

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Mail, User, Lock, Calendar, CornerUpRight, Plus, LogIn, X } from 'lucide-react';
 import BackendAPI from '../utils/api';
 
-const API_BASE_URL = `https://novaprojectagnetaibackend.onrender.com/api/v1`;
+// const API_BASE_URL = `https://novaprojectagnetaibackend.onrender.com/api/v1`;
+const API_BASE_URL = `${BackendAPI}/api/v1`;
 
 const initialFormData = {
     email: '',

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, User, Calendar, CornerDownRight, LogOut, CheckCircle } from 'lucide-react';
+import BackendAPI from '../utils/api';
 
-const API_BASE_URL = `https://novaprojectagnetaibackend.onrender.com/api/v1`;
+// const API_BASE_URL = `https://novaprojectagnetaibackend.onrender.com/api/v1`;
+const API_BASE_URL = `${BackendAPI}/api/v1`;
 
 const ProfileDetail = ({ icon: Icon, label, value }) => (
     <div className="flex items-center space-x-4 p-3 bg-slate-800 rounded-lg border border-slate-700">
