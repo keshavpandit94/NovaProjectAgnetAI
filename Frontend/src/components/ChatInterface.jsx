@@ -2,7 +2,7 @@ import { Send, Camera, User, Zap } from 'lucide-react';
 import React, { useState, useRef, useEffect } from 'react';
 import BackendAPI from '../utils/api';
 
-const API_BASE_URL = `${BackendAPI}/api/v1`;
+const API_BASE_URL = `https://novaprojectagnetaibackend.onrender.com/api/v1`;
 
 const ChatInterface = ({ userToken }) => {
   const [messages, setMessages] = useState([]);
